@@ -1,0 +1,142 @@
+[
+    {
+        "SerialNo": 1,
+        "Date": "2023-09-18",
+        "Name": "Person 1",
+        "Category": "Education",
+        "Amount": "$467"
+    },
+    {
+        "SerialNo": 2,
+        "Date": "2023-09-20",
+        "Name": "Person 2",
+        "Category": "Education",
+        "Amount": "$315"
+    },
+    {
+        "SerialNo": 3,
+        "Date": "2023-09-28",
+        "Name": "Person 3",
+        "Category": "Food",
+        "Amount": "$30"
+    },
+    {
+        "SerialNo": 4,
+        "Date": "2023-09-18",
+        "Name": "Person 4",
+        "Category": "Food",
+        "Amount": "$421"
+    },
+    {
+        "SerialNo": 5,
+        "Date": "2023-09-03",
+        "Name": "Person 5",
+        "Category": "Food",
+        "Amount": "$359"
+    },
+    {
+        "SerialNo": 6,
+        "Date": "2023-09-02",
+        "Name": "Person 6",
+        "Category": "Education",
+        "Amount": "$472"
+    },
+    {
+        "SerialNo": 7,
+        "Date": "2023-09-03",
+        "Name": "Person 7",
+        "Category": "Food",
+        "Amount": "$500"
+    },
+    {
+        "SerialNo": 8,
+        "Date": "2023-09-04",
+        "Name": "Person 8",
+        "Category": "Food",
+        "Amount": "$416"
+    },
+    {
+        "SerialNo": 9,
+        "Date": "2023-09-09",
+        "Name": "Person 9",
+        "Category": "Food",
+        "Amount": "$198"
+    },
+    {
+        "SerialNo": 10,
+        "Date": "2023-09-29",
+        "Name": "Person 10",
+        "Category": "Food",
+        "Amount": "$428"
+    },
+    {
+        "SerialNo": 11,
+        "Date": "2023-09-12",
+        "Name": "Person 11",
+        "Category": "Food",
+        "Amount": "$243"
+    },
+    {
+        "SerialNo": 12,
+        "Date": "2023-09-04",
+        "Name": "Person 12",
+        "Category": "Education",
+        "Amount": "$65"
+    },
+    {
+        "SerialNo": 13,
+        "Date": "2023-09-03",
+        "Name": "Person 13",
+        "Category": "Education",
+        "Amount": "$86"
+    },
+    {
+        "SerialNo": 14,
+        "Date": "2023-09-10",
+        "Name": "Person 14",
+        "Category": "Food",
+        "Amount": "$246"
+    },
+    {
+        "SerialNo": 15,
+        "Date": "2023-09-20",
+        "Name": "Person 15",
+        "Category": "Education",
+        "Amount": "$44"
+    },
+    {
+        "SerialNo": 16,
+        "Date": "2023-09-14",
+        "Name": "Person 16",
+        "Category": "Food",
+        "Amount": "$213"
+    },
+    {
+        "SerialNo": 17,
+        "Date": "2023-09-23",
+        "Name": "Person 17",
+        "Category": "Education",
+        "Amount": "$50"
+    },
+    {
+        "SerialNo": 18,
+        "Date": "2023-09-13",
+        "Name": "Person 18",
+        "Category": "Food",
+        "Amount": "$185"
+    },
+    {
+        "SerialNo": 19,
+        "Date": "2023-09-16",
+        "Name": "Person 19",
+        "Category": "Food",
+        "Amount": "$387"
+    },
+    {
+        "SerialNo": 20,
+        "Date": "2023-09-26",
+        "Name": "Person 20",
+        "Category": "Food",
+        "Amount": "$276"
+    }
+]

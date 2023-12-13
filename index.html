@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edu Feast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <a href="index.html" style="cursor: pointer;">
+            <img src="edu1.png" alt="Logo" class="logo">
+        </a>
+
+        <nav>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                <a href="#stories">Donations</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact us</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main">
+        <div><img src="image2.jpeg"></div>
+        <h1>Support a Child: Educate and Nourish with Your Donation </h1>
+        <p><a href="main.html" class="cta-button">Start a Donation</a></p>
+
+
+    </section>
+
+    <section class="stories" id="stories">
+        <h2>Donations</h2>
+
+        <div class="data-show">
+            <div class="month-selection">
+                <table>
+                    <thead>
+                        <tr id="monthButtons">
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="donation-table" style="display:none;">
+                <table id="donationTable">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <button id="showMoreBtn">Show More</button>
+                <button id="showLessBtn" style="display:none;">Show Less</button>
+            </div>
+            <div id="noDataMessage" style="display:none;">No data available for this month</div>
+        </div>
+
+        </div>
+        <div class="data-metrics">
+            <h3>Data Metrics</h3>
+            <p style="font-size: small;" id="totalDonation">Total Donation: <span>$0</span></p>
+            <hr>
+            <p style="font-size: small;"> <a href="stats.html" class="cta-button">See more beatiful info</a></p>
+        </div>
+
+
+        <div class="story-container">
+            <article class="story">
+                <h3> “EduMeal Support: Cultivating Growth Through Nourishment and Knowledge”</h3>
+
+
+            </article>
+
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <pa class="about_text"> At EduMeal Support, we are dedicated to eradicating hunger and educational barriers for
+            children in need. Our mission is to provide nutritious meals and educational resources, ensuring every child
+            has the foundation to thrive academically. Founded on the belief that education is the right of every child,
+            we bridge the gap with our meal donation drives and support programs. Our efforts are fueled by community
+            collaboration and the generosity of our supporters. Join us in our pursuit to end classroom hunger and
+            foster learning.
+
+            “Empower a child's future with us—one meal, one lesson at a time.”
+        </pa>
+
+        <div class="user-comments-container">
+            <button class="scroll-button left">&lt;</button>
+            <div class="user-comments">
+                <div class="comment-card">Comment 5</div>
+
+                <div class="comment-card">Comment 1</div>
+                <div class="comment-card">Comment 2</div>
+                <div class="comment-card">Comment 3</div>
+                <div class="comment-card">Comment 4</div>
+                <div class="comment-card">Comment 5</div>
+
+                <div class="comment-card">Comment 1</div>
+            </div>
+            <button class="scroll-button right">&gt;</button>
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="user_name" placeholder="Your Name" required>
+            <input type="email" id="user_email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+
+    <footer class="footer">
+        <p>Made with ❤️ in Boston</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script src="contact_script.js"></script>
+
+    <script src="donation.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+        function handleSubmit(event) {
+    event.preventDefault();
+
+    // SMTP server configuration
+    const smtpConfig = {
+        SecureToken: "1345f9b9-67d2-4663-9cb8-589d5ce97205",
+        To: 'sscsproj@gmail.com',
+        From: document.getElementById('email').value,
+        Subject: "New Message from Contact Form", // You can customize this subject line
+        Body: `
+            Name: ${document.getElementById('name').value}
+            Email: ${document.getElementById('email').value}
+            Message: ${document.getElementById('message').value}`
+    };
+
+    // Sending email
+    Email.send(smtpConfig).then(
+        message => {
+            alert("Message sent successfully!");
+            document.getElementById('contact-form').reset(); // Reset the form after successful send
+        }
+    ).catch(error => {
+        alert("Failed to send message: " + error);
+    });
+}
+    </script>
+</body>
+
+</html>

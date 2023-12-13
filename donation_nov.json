@@ -1,0 +1,22 @@
+[
+    {"SerialNo": 1, "Date": "2023-11-01", "Name": "John Doe", "Category": "Food", "Amount": "$50"},
+    {"SerialNo": 2, "Date": "2023-11-02", "Name": "Jane Smith", "Category": "Edu", "Amount": "$75"},
+    {"SerialNo": 3, "Date": "2023-11-03", "Name": "Alice Johnson", "Category": "Food", "Amount": "$100"},
+    {"SerialNo": 4, "Date": "2023-11-04", "Name": "Bob Brown", "Category": "Edu", "Amount": "$150"},
+    {"SerialNo": 5, "Date": "2023-11-05", "Name": "Carol White", "Category": "Food", "Amount": "$200"},
+    {"SerialNo": 6, "Date": "2023-11-06", "Name": "Dave Wilson", "Category": "Edu", "Amount": "$250"},
+    {"SerialNo": 7, "Date": "2023-11-07", "Name": "Eva Adams", "Category": "Food", "Amount": "$300"},
+    {"SerialNo": 8, "Date": "2023-11-08", "Name": "Frank Clark", "Category": "Edu", "Amount": "$350"},
+    {"SerialNo": 9, "Date": "2023-11-09", "Name": "Grace Lewis", "Category": "Food", "Amount": "$400"},
+    {"SerialNo": 10, "Date": "2023-11-10", "Name": "Henry Martin", "Category": "Edu", "Amount": "$450"},
+    {"SerialNo": 11, "Date": "2023-11-11", "Name": "Isabel Scott", "Category": "Food", "Amount": "$500"},
+    {"SerialNo": 12, "Date": "2023-11-12", "Name": "Jack Turner", "Category": "Edu", "Amount": "$550"},
+    {"SerialNo": 13, "Date": "2023-11-13", "Name": "Kathy Walker", "Category": "Food", "Amount": "$600"},
+    {"SerialNo": 14, "Date": "2023-11-14", "Name": "Leo Allen", "Category": "Edu", "Amount": "$650"},
+    {"SerialNo": 15, "Date": "2023-11-15", "Name": "Mia Young", "Category": "Food", "Amount": "$700"},
+    {"SerialNo": 16, "Date": "2023-11-16", "Name": "Nate King", "Category": "Edu", "Amount": "$750"},
+    {"SerialNo": 17, "Date": "2023-11-17", "Name": "Olivia Hernandez", "Category": "Food", "Amount": "$800"},
+    {"SerialNo": 18, "Date": "2023-11-18", "Name": "Paul Garcia", "Category": "Edu", "Amount": "$850"},
+    {"SerialNo": 19, "Date": "2023-11-19", "Name": "Quinn Robinson", "Category": "Food", "Amount": "$900"},
+    {"SerialNo": 20, "Date": "2023-11-20", "Name": "Rachel Moore", "Category": "Edu", "Amount": "$950"}
+]

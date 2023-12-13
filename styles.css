@@ -1,0 +1,659 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+p{
+    font-weight: 100;
+    font-variant: petite-caps;
+    font-size: x-large;
+}
+
+.about p{
+    font-weight: 100;
+    font-variant: petite-caps;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.header-scrolled {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 5px 20px;
+}
+
+.logo {
+    height: 60px;
+}
+.logo-link {
+    cursor: pointer;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left a, .nav-right a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover, .nav-right a:hover {
+    color: #9662e1;
+}
+
+.nav-right a:last-child {
+    margin-right: 0;
+}
+
+.main{
+    padding-top: 150px;
+    background-color: white;
+    border-bottom-left-radius: 100% 25%;
+    border-bottom-right-radius: 100% 25%;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main, .about, .contact {
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 20px;
+    display: flex;
+    direction: ltr;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 100% 25%;
+    border-bottom-right-radius: 100% 25%;
+    box-shadow: 0 11px 10px rgba(0, 0, 0, 0.1);
+}
+.main h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9662e1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #9662e1;
+}
+
+.stories h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.data-show{
+    padding: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    border: black;
+    background-color: whitesmoke;
+}
+#donationTable {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+#donationTable thead {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#donationTable tr:hover {
+    background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 600px) {
+    .stories {
+        padding: 10px;
+        margin: 0;
+    }
+
+    #donationTable {
+        overflow-x: auto;
+    }
+}
+.donation-table {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 20px;
+    overflow: hidden;
+}
+
+#donationTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+#donationTable thead {
+    background-color: #f2f2f2;
+}
+
+#donationTable th, #donationTable td {
+    text-align: left;
+    padding: 15px;
+}
+
+#donationTable th {
+    border-bottom: 2px solid #ddd;
+}
+
+#donationTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#donationTable tr:hover {
+    background-color: #e8e8e8;
+}
+
+#showMoreBtn, #showLessBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#showMoreBtn:hover, #showLessBtn:hover {
+    background-color: #45a049;
+}
+.stories .cta-button {
+    font-size: 1em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stories .cta-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#monthButtons th button {
+    transition: background-color 0.3s ease;
+}
+
+#noDataMessage {
+    padding: 15px;
+    background-color: #ffebeb;
+    color: #d9534f;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Style adjustments for the data-metrics section 
+/* Existing styles for 'stories' section, with modifications */
+.stories {
+    text-align: center;
+    padding-bottom: 50px;
+    margin: 20px;
+    display: flex;
+    direction: ltr;
+    width: 100%;
+    min-height: 30vh;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 100% 25%;
+    border-bottom-right-radius: 100% 25%;
+    box-shadow: 0 11px 10px rgba(0, 0, 0, 0.1);
+}
+
+#donationTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#donationTable th, #donationTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#donationTable th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#showMoreBtn, #showLessBtn{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#showMoreBtn:hover,#showLessBtn:hover {
+    background-color: #367c39;
+}
+#monthSelector button{
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #84619f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#monthSelector th button:hover {
+    background-color: #84619f;
+}
+
+
+#monthButtons th button {
+    padding: 5px 10px;
+    margin: 2px;
+    background-color: #84619f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#monthButtons th button:hover {
+    background-color: #84619f;
+}
+
+#monthButtons th button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: default;
+    pointer-events: none; 
+}
+
+
+/*///////////////////////////////////////////////////////////*/
+
+/*///////////////////////////////////////////////////////////*/
+
+/* Container styles */
+.container {
+    background: white;
+    padding: 10px;
+    border: 10px;
+    border-radius: 20px;
+    display: flex;
+    width: 80%;
+    height: 60vh;
+    margin: 120px;
+    position: relative;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.left-section, .right-section {
+    padding: 20px;
+}
+
+.left-section {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section {
+    border-radius: 25px;
+    border-bottom-left-radius: 50% 100%;
+    border-top-left-radius: 50% 100%;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.1);
+}
+
+.header, .headerl {
+    text-align: right;
+}
+
+.headerl {
+    text-align: left;
+}
+
+.main-content button {
+    display: block;
+    margin-bottom: 10px;
+    width: 40%;
+    padding: 15px;
+    margin: 50px auto;
+    background-color: #9662e1;;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.main-content button:hover {
+    background-color: #c78252;
+    color: white;
+}
+
+.main-content button.active {
+    background-color: green;
+    color: white;
+}
+
+
+.user-comments-container {
+    width: 50%;
+    height: 30vh;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.user-comments {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.comment-card {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: lightgray;
+}
+
+.scroll-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.user-comments::-webkit-scrollbar {
+    display: none;
+}
+
+#contact-form {
+    width: 50%;
+    margin: 10px;
+    height: 40vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+}
+#input{
+    padding: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form, input, textarea{
+    padding: 10px;
+    margin: 10px;
+    width: 30vh;
+    border: 5px;
+    border-radius: 12px;
+}
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.question {
+    margin-bottom: 20px;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;  
+}
+
+.main-container {
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+footer {
+    box-shadow: 0 -30px 50px rgba(0, 0, 0, 0.1);
+    color: white;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #84619f;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    border-top-left-radius: 50% 20%;
+    border-top-right-radius: 50% 20%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.footer p {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+@media (max-width: 768px) {
+    .footer p {
+        font-size: 16px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    body, h1, h2, p, ul, li {
+        flex-direction: column;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+
+    .nav-left, .nav-right {
+        flex-direction: column;
+        margin: 5px 0;
+    }
+
+    .nav-left a, .nav-right a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    p {
+        font-size: large;
+    }
+
+    .about p {
+        font-size: medium;
+    }
+    .main{
+        padding-top: 100px;
+    }
+    .main, .about, .contact {
+        text-align: center;
+        padding-bottom: 3px;
+        margin: 10px;
+        display: flex;
+        direction: ltr;
+        width: 100%;
+        height: 25vh;
+        flex-direction: column;
+        align-items: center;
+        border-bottom-left-radius: 100% 25%;
+        border-bottom-right-radius: 100% 25%;
+        box-shadow: 0 11px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+.monthSelector, .monthlychart, .scatter-plot-chart, .pie-chart {
+    padding: 30px;
+    margin: 30px;
+    border: 3px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+

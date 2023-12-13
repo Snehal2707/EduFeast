@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Donation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+</head>
+<body>
+    <header id="main-header">
+        <a href="index.html" style="cursor: pointer;"><img src="edu1.png" alt="Logo" class="logo"></a>
+        <nav>
+            <div class="nav-right">
+                <a href="index.html">Home</a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="left-section">
+            <div class="question-section">
+                <p id="question1"><b>Donation for Education or Food</b></p>
+            </div>
+        </div>
+        <div class="right-section">
+            <div id="donate-button-container">
+                <div id="donate-button"></div>
+                <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+                <script>
+                PayPal.Donation.Button({
+                env:'sandbox',
+                hosted_button_id:'ECGEZD5XBKCN2',
+                image: {
+                src:'https://pics-v2.sandbox.paypal.com/00/s/NWVlNmUyMmItMzY0Yi00NTNjLTg1ZGEtM2MzMTJmOGNjMWU5/file.PNG',
+                alt:'Donate with PayPal button',
+                title:'PayPal - The safer, easier way to pay online!',
+                }
+                }).render('#donate-button');
+                </script>
+            </div>                   
+        </div>
+    </div>
+
+
+    <footer class="footer" style="position: fixed;">
+        <p>Made with ❤️ in Boston</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+   </script>
+    <script src="main_script.js"></script>
+</body>
+</html>
